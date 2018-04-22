@@ -65,27 +65,56 @@ Name | DataSize | Deadline |Comment
 
 # Datasets
 
-+ [click damage](http://clickdamage.com/sourcecode/cv_datasets.php)
-+ [YACVID](http://riemenschneider.hayko.at/vision/dataset/) Yet Another Computer Vision Index To Datasets (YACVID)
+### Large Collections
++ [computervisiononline](https://computervisiononline.com/datasets) 10 pages of dataset
++ [visualdata.io](https://www.visualdata.io/discover) interesting 100+ datasets, can sort and filter
++ [click damage](http://clickdamage.com/sourcecode/cv_datasets.php) some old dataset
 + [cvpapers](http://www.cvpapers.com/datasets.html) Meta Pointer: A large collection organized by CV Datasets.
-+ [computervisiononline](https://computervisiononline.com/datasets)
-+ [CVonline](http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm)
++ [Are we there yet?](http://rodrigob.github.io/are_we_there_yet/build/#datasets) Which paper provides the best results on standard dataset X?
++ 
++ [CVonline](http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm) Lots of dataset, cataloged
++ [YACVID](http://riemenschneider.hayko.at/vision/dataset/) Yet Another Computer Vision Index To Datasets (YACVID)
++ [visionbib](http://datasets.visionbib.com/info-index.html) Paper and related dataset
 + [vision.in](https://vision.in.tum.de/data/datasets)
 + [deeplearning.net](http://deeplearning.net/datasets/)
 + [utexas](http://www.cs.utexas.edu/~grauman/courses/spring2008/datasets.htm)
+
+### Single Dataset
 + ImageNet: a large-scale image dataset for visual recognition organized by WordNet hierarchy
 + SUN Database: a benchmark for scene recognition and object detection with annotated scene categories and segmented objects
 + Places Database: a scene-centric database with 205 scene categories and 2.5 millions of labelled images
 + NYU Depth Dataset v2: a RGB-D dataset of segmented indoor scenes
 + Microsoft COCO: a new benchmark for image recognition, segmentation and captioning
-+ Flickr100M: 100 million creative commons Flickr images
 + Labeled Faces in the Wild: a dataset of 13,000 labeled face photographs
 + Human Pose Dataset: a benchmark for articulated human pose estimation
-+ YouTube Faces DB: a face video dataset for unconstrained face recognition in videos
-+ UCF101: an action recognition data set of realistic action videos with 101 action categories
++ YouTube Faces DB: a face video dataset for unconstrained face recognition in videosw
 + HMDB-51: a large human motion dataset of 51 action classes
 + ActivityNet: A large-scale video dataset for human activity understanding
 + Moments in Time: A dataset of one million 3-second videos
++ IMDB-WIKI
+
+###Interesting ones to work on
+1. Classification (ok with localization but not detection)
+	+ [Caltech 101](http://www.vision.caltech.edu/Image_Datasets/Caltech101/) 131mb, matlab format annotation, have contour and 1 bounding box, not sure if it is enough for deep learning, have a 256 version
+	+ [Flower](http://www.robots.ox.ac.uk/~vgg/data/flowers/) 60mb, png mask for segmentation (part), i cannot find classification labels, but it seems sorted, some files in matlab format, have a 102 version
+	+ [Stanford Dogs](http://vision.stanford.edu/aditya86/ImageNetDogs/) 800mb, original dataset have xml format bounding box, makes it perfect for localization
+	+ [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) 173mb 13233 images 5749 people 1680 people with two or more images, also 1500 images have segmentation mask, many classes small sample
+	+ [Pubfig Faces](http://www.cs.columbia.edu/CAVE/databases/pubfig/)
+	+ [Weizmann horses](http://www.msri.org/people/members/eranb/) 328 side-view color images of horses that were manually segmented. Maybe good for start semantic segmentation
+	+ [LAG: Large Age Gap](http://www.ivl.disco.unimib.it/activities/large-age-gap-face-verification/) The dataset contains 3,828 images of 1,010 celebrities. For each identity at least one child/young image and one adult/old image are present. 200mb, interesting dataset, not sure what to do with it
+	+ [SCUT-FBP5500-Database-Release](https://github.com/HCIILAB/SCUT-FBP5500-Database-Release) Good for GANs, generate face
+
+	
+2. Video Classification 
+	+ [e-VDS](https://engineering.purdue.edu/elab/eVDS/) 900 files, 660mb, 10s mp4, 33 classes
+	+ [Densely Annotated VIdeo Segmentation](http://davischallenge.org/index.html) 2gb, single or multiple object
+	+ [UCF50](http://crcv.ucf.edu/data/UCF50.php) 3gb, also have some others
+
+3. Object Detection, Instance Segmentation
+	+ [PASCAL VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html) 2gb object detection, segmentation, person layout
+
+
+
 
 # Conference
 
